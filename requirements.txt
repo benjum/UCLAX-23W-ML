@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+ipywidgets
+scikit-learn
+plotly
+yellowbrick
+seaborn
+statsmodels
+dtreeviz
+nltk
+gensim
+tensorflow
