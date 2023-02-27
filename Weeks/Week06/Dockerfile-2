@@ -1,0 +1,18 @@
+FROM benjum/ml-week5:arm64
+
+USER root
+
+#RUN conda uninstall graphviz && \
+#    pip install -U 
+#    conda uninstall graphviz && \
+
+#RUN apt install graphviz
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+  && apt-get -y install --no-install-recommends \
+  graphviz \
+  patch \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
+
+
+USER $NB_UID
