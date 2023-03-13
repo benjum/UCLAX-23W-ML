@@ -11,3 +11,4 @@ dtreeviz
 nltk
 gensim
 tensorflow
+jax[cpu]
